@@ -11,13 +11,6 @@ const getAllDataZip = async (req, res) => {
     }
 };
 
-const getCardById = (req, res) => {
-    const { id } = req.params;
-    const card = lorcanaService.getCardById(id); 
-    res.json(card);
-};
-
 module.exports = {
-    getAllDataZip,
-    getCardById
+    getAllDataZip
 };
